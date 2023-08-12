@@ -56,6 +56,20 @@ IAM Policy structure:
 ======================================
 * In aws when we create any resource will have ARN(Amazon resource name)
 Refere notes [https://directdevops.blog/2021/09/16/aws-classroom-series-16-sept-2021/]
+if we  need to create  iam policy , we need action and resources are mandatory.
 
+syntax:
+
+"<Version>" : "",
+"<id>" : ,
+"<statement>" : [
+  {
+    "Effect" : "Allow",
+    "Action" : "s3:*",
+    "resources": "*"
+  }
+]
+
+ARN Format: "arn:<partician name-aws>:s3:::<s3 bucket name>"  - mostly we use ARn for resource of IAM policy.
 
   
